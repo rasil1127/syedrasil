@@ -1,0 +1,24 @@
+{
+  "name": "rasils-projects",
+  "version": "1.0.0",
+  "description": "Static website showcasing Rasil's electronics projects",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -c-1",
+    "start": "npx http-server . -p 3000",
+    "serve": "npx http-server . -p 3000 -c-1"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "electronics",
+    "projects",
+    "battery",
+    "pcb"
+  ],
+  "author": "Rasil",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

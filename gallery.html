@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Rasil's Projects</title>
+    <meta name="description" content="Designing and building lithium-ion battery packs, PCBs, custom tools, and electronics projects. Documenting the journey from concept to creation." />
+    <meta name="keywords" content="electronics, battery, PCB, engineering, projects" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-top">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">RP</div>
+            <span class="logo-text">Rasil's Projects</span>
+          </a>
+          <button class="mobile-menu" aria-label="Menu">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Gallery</span>
+      </nav>
+
+      <div class="page-content">
+        <h1 class="page-title">Project Gallery</h1>
+        <p class="page-description">
+          Visual documentation of projects, designs, PCBs, tools, and
+          components. Click any image to view fullscreen with download options.
+        </p>
+
+        <!-- Search and Filters -->
+        <div class="filter-section">
+          <div class="filter-header">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.414A1 1 0 013 6.707V4z"
+              ></path>
+            </svg>
+            <span>Filter Images</span>
+          </div>
+
+          <div class="filter-grid">
+            <div class="filter-item">
+              <label for="search">Search</label>
+              <div class="search-input">
+                <svg
+                  class="search-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  ></path>
+                </svg>
+                <input
+                  type="search"
+                  id="search"
+                  placeholder="Search images..."
+                  class="form-input"
+                  autocomplete="off"
+                />
+                <div
+                  id="autocomplete-list"
+                  class="autocomplete-suggestions"
+                ></div>
+              </div>
+            </div>
+
+            <div class="filter-item">
+              <label for="category">Category</label>
+              <select id="category" class="form-select">
+                <option value="">All Categories</option>
+                <option value="BMS">BMS</option>
+              </select>
+            </div>
+
+            <div class="filter-item">
+              <label for="tag">Tag</label>
+              <select id="tag" class="form-select">
+                <option value="">All Tags</option>
+                <option value="BMS">BMS</option><option value="EDEXBMS">EDEXBMS</option><option value="battery management system">battery management system</option><option value="passive balancer">passive balancer</option><option value="balancing">balancing</option><option value="differential voltage measurement">differential voltage measurement</option><option value="prototype">prototype</option><option value="i2c">i2c</option><option value="bms">bms</option><option value="STM32">STM32</option><option value="PCB">PCB</option><option value="Stlink">Stlink</option><option value="programming">programming</option><option value="SMD">SMD</option><option value="Soldering">Soldering</option><option value="soldering">soldering</option><option value="pick and place">pick and place</option><option value="pcb">pcb</option><option value="stm32">stm32</option><option value="stm32l">stm32l</option><option value="easyeda">easyeda</option><option value="edexbms">edexbms</option><option value="components">components</option><option value="lcsc">lcsc</option><option value="cooling">cooling</option><option value="thermal pads">thermal pads</option><option value="stlink">stlink</option><option value="reflow">reflow</option><option value="solder paste">solder paste</option><option value="mosfet">mosfet</option><option value="reflow oven">reflow oven</option><option value="bodge">bodge</option><option value="logic analyser">logic analyser</option><option value="protocol sniffing">protocol sniffing</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-results">
+            <span class="results-count">Showing 30 of 30 images</span>
+            <button class="btn btn-outline btn-sm" id="clearFilters">
+              Clear All Filters
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="gallery-grid">
+          
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="BMS,EDEXBMS,battery management system,passive balancer,balancing"
+            data-image-id="resistor-based-passive-balancer"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3178.JPEG"
+              alt="Resistor based passive balancer"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('resistor-based-passive-balancer')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3178.JPEG', 'Resistor_based_passive_balancer.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">Resistor based passive balancer</h3>
+              <p class="gallery-description">resistor based passive balancer first ever design prototype for EDEXBMS</p>
+              <div class="gallery-tags">
+                <span class="tag">#BMS</span><span class="tag">#EDEXBMS</span><span class="tag">#battery management system</span><span class="tag">#passive balancer</span><span class="tag">#balancing</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="differential voltage measurement,prototype,BMS"
+            data-image-id="differential-voltage-measurement-prototype"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3294.JPEG"
+              alt="differential voltage measurement prototype"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('differential-voltage-measurement-prototype')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3294.JPEG', 'differential_voltage_measurement_prototype.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">differential voltage measurement prototype</h3>
+              <p class="gallery-description">first prototype of differential measurement using resistors. </p>
+              <div class="gallery-tags">
+                <span class="tag">#differential voltage measurement</span><span class="tag">#prototype</span><span class="tag">#BMS</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="differential voltage measurement,prototype,BMS"
+            data-image-id="differential-voltage-measurement-prototype-2"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3678.JPG"
+              alt="differential voltage measurement prototype 2"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('differential-voltage-measurement-prototype-2')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3678.JPG', 'differential_voltage_measurement_prototype_2.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">differential voltage measurement prototype 2</h3>
+              <p class="gallery-description">-</p>
+              <div class="gallery-tags">
+                <span class="tag">#differential voltage measurement</span><span class="tag">#prototype</span><span class="tag">#BMS</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="prototype,BMS,differential voltage measurement,i2c"
+            data-image-id="differential-voltage-measurement-prototype-test"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3209.JPEG"
+              alt="differential voltage measurement prototype test"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('differential-voltage-measurement-prototype-test')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3209.JPEG', 'differential_voltage_measurement_prototype_test.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">differential voltage measurement prototype test</h3>
+              <p class="gallery-description">testing the setup using esp32 via i2c</p>
+              <div class="gallery-tags">
+                <span class="tag">#prototype</span><span class="tag">#BMS</span><span class="tag">#differential voltage measurement</span><span class="tag">#i2c</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="EDEXBMS,bms,battery management system"
+            data-image-id="edex-bms-prototype-v4-front"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316392_y.jpg"
+              alt="EDEX bms prototype v4 front"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-prototype-v4-front')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316392_y.jpg', 'EDEX_bms_prototype_v4_front.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms prototype v4 front</h3>
+              <p class="gallery-description">4th iteration of the EDEXBMS battery management system front</p>
+              <div class="gallery-tags">
+                <span class="tag">#EDEXBMS</span><span class="tag">#bms</span><span class="tag">#battery management system</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="STM32,PCB,BMS"
+            data-image-id="edex-bms-v4-assembly-verification"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316397_y.jpg"
+              alt="EDEX bms v4 assembly verification"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-assembly-verification')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316397_y.jpg', 'EDEX_bms_v4_assembly_verification.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 assembly verification</h3>
+              <p class="gallery-description">checking for proper soldering of the stm32 pins.</p>
+              <div class="gallery-tags">
+                <span class="tag">#STM32</span><span class="tag">#PCB</span><span class="tag">#BMS</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="STM32,Stlink,programming,BMS"
+            data-image-id="edex-bms-v4-programming-setup"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316385_y.jpg"
+              alt="EDEX bms v4 programming setup"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-programming-setup')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316385_y.jpg', 'EDEX_bms_v4_programming_setup.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 programming setup</h3>
+              <p class="gallery-description">setting up the bms for programming using a stlink and usb to ttl converter uart for debugging</p>
+              <div class="gallery-tags">
+                <span class="tag">#STM32</span><span class="tag">#Stlink</span><span class="tag">#programming</span><span class="tag">#BMS</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="BMS,PCB,SMD,Soldering"
+            data-image-id="edex-bms-v4-smd-assembly"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316409_y.jpg"
+              alt="EDEX bms v4 SMD assembly "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-smd-assembly')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316409_y.jpg', 'EDEX_bms_v4_SMD_assembly_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 SMD assembly </h3>
+              <p class="gallery-description">fully assembled edex bms with all smd components soldered</p>
+              <div class="gallery-tags">
+                <span class="tag">#BMS</span><span class="tag">#PCB</span><span class="tag">#SMD</span><span class="tag">#Soldering</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="BMS,PCB,soldering"
+            data-image-id="edex-bms-v4-stencil-and-pcb"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316382_y.jpg"
+              alt="EDEX bms v4 stencil and pcb "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-stencil-and-pcb')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316382_y.jpg', 'EDEX_bms_v4_stencil_and_pcb_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 stencil and pcb </h3>
+              <p class="gallery-description">solder paste stencil and pcb directly from the manufacture right before I soldered everything.</p>
+              <div class="gallery-tags">
+                <span class="tag">#BMS</span><span class="tag">#PCB</span><span class="tag">#soldering</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="pick and place,soldering,pcb,bms"
+            data-image-id="edex-bms-v4-components-pick-and-place-diagram"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316402_y.jpg"
+              alt="EDEX bms v4 components pick and place diagram"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-components-pick-and-place-diagram')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316402_y.jpg', 'EDEX_bms_v4_components_pick_and_place_diagram.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 components pick and place diagram</h3>
+              <p class="gallery-description">diagram for picking and placing components onto the pcb on my monitor for easy assembly</p>
+              <div class="gallery-tags">
+                <span class="tag">#pick and place</span><span class="tag">#soldering</span><span class="tag">#pcb</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="stm32,stm32l"
+            data-image-id="stm32l-low-power-mcu-for-edex-bms-v4"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316403_y.jpg"
+              alt="STM32L low power mcu for EDEX bms v4"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('stm32l-low-power-mcu-for-edex-bms-v4')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316403_y.jpg', 'STM32L_low_power_mcu_for_EDEX_bms_v4.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">STM32L low power mcu for EDEX bms v4</h3>
+              <p class="gallery-description">some stm32 low power mcu for the new edexbms v4 series. </p>
+              <div class="gallery-tags">
+                <span class="tag">#stm32</span><span class="tag">#stm32l</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="easyeda,pcb,bms"
+            data-image-id="edex-bms-v4-pcb"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214424.png"
+              alt="EDEX bms v4 pcb "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-pcb')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214424.png', 'EDEX_bms_v4_pcb_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 pcb </h3>
+              <p class="gallery-description">custom designed v4 pcb for edexbms. </p>
+              <div class="gallery-tags">
+                <span class="tag">#easyeda</span><span class="tag">#pcb</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="pcb,easyeda,bms"
+            data-image-id="edex-bms-v4-upper-aluminium-pcb"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214431.png"
+              alt="EDEX bms v4 upper aluminium pcb "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-upper-aluminium-pcb')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214431.png', 'EDEX_bms_v4_upper_aluminium_pcb_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 upper aluminium pcb </h3>
+              <p class="gallery-description">upper layer of pcb made from aluminium for cooling of the mosfets.</p>
+              <div class="gallery-tags">
+                <span class="tag">#pcb</span><span class="tag">#easyeda</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,pcb,easyeda"
+            data-image-id="edex-bms-v3-power-stage-pcb-design"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1226.JPEG"
+              alt="EDEX bms v3 power stage pcb design"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-power-stage-pcb-design')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1226.JPEG', 'EDEX_bms_v3_power_stage_pcb_design.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 power stage pcb design</h3>
+              <p class="gallery-description">edexbms v3 power stage pcb layer this houses the mosfets and power components of the bms </p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#pcb</span><span class="tag">#easyeda</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,pcb,easyeda"
+            data-image-id="edex-bms-v3-logic-pcb-design"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1225.JPEG"
+              alt="EDEX bms v3 logic pcb design"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-logic-pcb-design')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1225.JPEG', 'EDEX_bms_v3_logic_pcb_design.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 logic pcb design</h3>
+              <p class="gallery-description">this is the logic pcb for edexbms this houses the mcu and balancing</p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#pcb</span><span class="tag">#easyeda</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,edexbms,battery management system"
+            data-image-id="edex-bms-v3-front"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316398_y.jpg"
+              alt="EDEX bms v3 front"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-front')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316398_y.jpg', 'EDEX_bms_v3_front.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 front</h3>
+              <p class="gallery-description">fully assembled edexbms v3 front </p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#edexbms</span><span class="tag">#battery management system</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,edexbms,battery management system"
+            data-image-id="edex-bms-v3-side"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316391_y.jpg"
+              alt="EDEX bms v3 side"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-side')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316391_y.jpg', 'EDEX_bms_v3_side.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 side</h3>
+              <p class="gallery-description">edexbms assembled side note that the top layer is made from aluminium for cooling </p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#edexbms</span><span class="tag">#battery management system</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="components,lcsc,bms"
+            data-image-id="edex-bms-v4-parts"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316390_y.jpg"
+              alt="EDEX bms v4 parts"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v4-parts')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316390_y.jpg', 'EDEX_bms_v4_parts.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v4 parts</h3>
+              <p class="gallery-description">edexbms v4 parts for assembly bought from lcsc </p>
+              <div class="gallery-tags">
+                <span class="tag">#components</span><span class="tag">#lcsc</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="cooling,bms,thermal pads"
+            data-image-id="edex-bms-v3-thermal-pads-for-cooling-balancing-resistors"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316400_y.jpg"
+              alt="EDEX bms v3 thermal pads for cooling balancing resistors"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-thermal-pads-for-cooling-balancing-resistors')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316400_y.jpg', 'EDEX_bms_v3_thermal_pads_for_cooling_balancing_resistors.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 thermal pads for cooling balancing resistors</h3>
+              <p class="gallery-description">thermal pads to transfer heat from the balancing resistors to the outer aluminium layer </p>
+              <div class="gallery-tags">
+                <span class="tag">#cooling</span><span class="tag">#bms</span><span class="tag">#thermal pads</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="programming,stlink,bms"
+            data-image-id="edex-bms-v3-programming-setup"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1331.JPEG"
+              alt="EDEX bms v3 programming setup "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-programming-setup')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1331.JPEG', 'EDEX_bms_v3_programming_setup_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 programming setup </h3>
+              <p class="gallery-description">programming setup using stlink and also usb to ttl converter not shown in this photo</p>
+              <div class="gallery-tags">
+                <span class="tag">#programming</span><span class="tag">#stlink</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="PCB,soldering,bms"
+            data-image-id="edex-bms-v3-assembled-power-stage-pcb"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316407_y.jpg"
+              alt="EDEX bms v3 assembled power stage pcb"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-assembled-power-stage-pcb')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316407_y.jpg', 'EDEX_bms_v3_assembled_power_stage_pcb.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 assembled power stage pcb</h3>
+              <p class="gallery-description">powerstage pcb assembled fully</p>
+              <div class="gallery-tags">
+                <span class="tag">#PCB</span><span class="tag">#soldering</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="soldering,pcb,bms"
+            data-image-id="edex-bms-v3-logic-board-assembly"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316410_y.jpg"
+              alt="EDEX bms v3 logic board assembly"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-logic-board-assembly')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316410_y.jpg', 'EDEX_bms_v3_logic_board_assembly.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 logic board assembly</h3>
+              <p class="gallery-description">partially assembled logic board for edexbms v3</p>
+              <div class="gallery-tags">
+                <span class="tag">#soldering</span><span class="tag">#pcb</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,pcb,soldering,reflow,solder paste"
+            data-image-id="edex-bms-v3-power-stage-board-reflow-oven-cooking"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316394_y.jpg"
+              alt="EDEX bms v3 power stage board reflow oven cooking"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-power-stage-board-reflow-oven-cooking')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316394_y.jpg', 'EDEX_bms_v3_power_stage_board_reflow_oven_cooking.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 power stage board reflow oven cooking</h3>
+              <p class="gallery-description">cooking the pcb in the reflow oven for optimal mosfet soldering onto the pcb. </p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#pcb</span><span class="tag">#soldering</span><span class="tag">#reflow</span><span class="tag">#solder paste</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,soldering,mosfet,reflow oven"
+            data-image-id="edex-bms-v3-power-stage-pcb-close-up"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316383_y.jpg"
+              alt="EDEX bms v3 power stage pcb close up "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-power-stage-pcb-close-up')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316383_y.jpg', 'EDEX_bms_v3_power_stage_pcb_close_up_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 power stage pcb close up </h3>
+              <p class="gallery-description">close up of mosfets reflowed in the reflow oven </p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#soldering</span><span class="tag">#mosfet</span><span class="tag">#reflow oven</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="pcb,easyeda,bms"
+            data-image-id="edex-bms-v3-top-aluminium-pcb"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214147.png"
+              alt="EDEX bms v3 top aluminium pcb "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-top-aluminium-pcb')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214147.png', 'EDEX_bms_v3_top_aluminium_pcb_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 top aluminium pcb </h3>
+              <p class="gallery-description">top aluminum pcb design in easyeda </p>
+              <div class="gallery-tags">
+                <span class="tag">#pcb</span><span class="tag">#easyeda</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,pcb,easyeda"
+            data-image-id="edex-bms-v3-logic-pcb"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214208.png"
+              alt="EDEX bms v3 logic pcb "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-logic-pcb')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214208.png', 'EDEX_bms_v3_logic_pcb_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 logic pcb </h3>
+              <p class="gallery-description">logic pcb made in easyeda</p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#pcb</span><span class="tag">#easyeda</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="pcb,easyeda,bms"
+            data-image-id="edex-bms-v3-power-stage-pcb"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214231.png"
+              alt="EDEX bms v3 power stage pcb"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-power-stage-pcb')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214231.png', 'EDEX_bms_v3_power_stage_pcb.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 power stage pcb</h3>
+              <p class="gallery-description">power stage pcb made in easyeda</p>
+              <div class="gallery-tags">
+                <span class="tag">#pcb</span><span class="tag">#easyeda</span><span class="tag">#bms</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,soldering,bodge"
+            data-image-id="edex-bms-v3-bodge-fix"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316389_y.jpg"
+              alt="EDEX bms v3 bodge fix "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-bodge-fix')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316389_y.jpg', 'EDEX_bms_v3_bodge_fix_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 bodge fix </h3>
+              <p class="gallery-description">power supply mosfet was of a too small package size so it was bodged in order for it to stop overheating. </p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#soldering</span><span class="tag">#bodge</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="bms,soldering,bodge"
+            data-image-id="edex-bms-v3-bodge-fix-closer-look"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316401_y.jpg"
+              alt="EDEX bms v3 bodge fix closer look "
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-bodge-fix-closer-look')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316401_y.jpg', 'EDEX_bms_v3_bodge_fix_closer_look_.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 bodge fix closer look </h3>
+              <p class="gallery-description">zoomed in </p>
+              <div class="gallery-tags">
+                <span class="tag">#bms</span><span class="tag">#soldering</span><span class="tag">#bodge</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="BMS"
+            data-tags="logic analyser,protocol sniffing,bms,programming"
+            data-image-id="edex-bms-v3-custom-protocol-sniffing"
+          >
+            <img
+              src="https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316384_y.jpg"
+              alt="EDEX bms v3 custom protocol sniffing"
+              class="gallery-image"
+            />
+            <div class="gallery-overlay">
+              <div class="overlay-buttons">
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="openModal('edex-bms-v3-custom-protocol-sniffing')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                  </svg>
+                  View
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="downloadImage('https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316384_y.jpg', 'EDEX_bms_v3_custom_protocol_sniffing.jpg')"
+                >
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <h3 class="gallery-title">EDEX bms v3 custom protocol sniffing</h3>
+              <p class="gallery-description">used a raspberry pi pico as a logic analyser to sniff my custom made protocol</p>
+              <div class="gallery-tags">
+                <span class="tag">#logic analyser</span><span class="tag">#protocol sniffing</span><span class="tag">#bms</span><span class="tag">#programming</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary Stats -->
+        <div class="stats-section">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">30</div>
+              <div class="stat-label">Total Images</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1</div>
+              <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">30</div>
+              <div class="stat-label">Currently Showing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Fullscreen Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">
+          <svg
+            class="icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+
+        <img id="modalImage" src="" alt="" class="modal-image" />
+
+        <div class="modal-info">
+          <h3 id="modalTitle" class="modal-title"></h3>
+          <p id="modalDescription" class="modal-description"></p>
+
+          <div class="modal-actions">
+            <div id="modalTags" class="modal-tags"></div>
+            <button id="modalDownload" class="btn btn-outline btn-sm">
+              <svg
+                class="icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h3 class="footer-title">Rasil's Projects</h3>
+            <p class="footer-description">
+              Designing and building lithium-ion battery packs, PCBs, custom tools, and electronics projects. Documenting the journey from concept to creation.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-heading">Technologies</h4>
+            <ul class="footer-tech">
+              <li>Lithium-ion Battery Design</li>
+              <li>PCB Design & Manufacturing</li>
+              <li>3D Modeling & Printing</li>
+              <li>Reflow Oven Construction</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 Rasil's Projects. Built for showcasing hardware projects.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>

@@ -1,0 +1,537 @@
+{
+  "projects": {
+    "custom-battery-management-system-edexbms": {
+      "id": "custom-battery-management-system-edexbms",
+      "title": "Custom battery management system (EDEXBMS)",
+      "description": "Custom designed lithium ion battery management system still under works has multiple different revisions.",
+      "status": "in-progress",
+      "category": "BMS",
+      "tags": [
+        "EDEXBMS",
+        "battery management system",
+        "BMS",
+        "PCB"
+      ],
+      "coverImage": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316392_y.jpg",
+      "readingTime": 5,
+      "images": [
+        "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316392_y.jpg"
+      ],
+      "startDate": "2023-02-21",
+      "completedDate": "",
+      "parentProject": "",
+      "subprojects": [],
+      "details": "dfgsdfgdd\n\n[resistor-based-passive-balancer]",
+      "technologies": [
+        "f"
+      ],
+      "challenges": [
+        "f"
+      ],
+      "outcomes": [
+        "f"
+      ],
+      "technologiesTitle": "Technologies",
+      "challengesTitle": "Key Challenges",
+      "outcomesTitle": "Outcomes"
+    }
+  },
+  "gallery": {
+    "resistor-based-passive-balancer": {
+      "id": "resistor-based-passive-balancer",
+      "title": "Resistor based passive balancer",
+      "description": "resistor based passive balancer first ever design prototype for EDEXBMS",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3178.JPEG",
+      "tags": [
+        "BMS",
+        "EDEXBMS",
+        "battery management system",
+        "passive balancer",
+        "balancing"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "differential-voltage-measurement-prototype": {
+      "id": "differential-voltage-measurement-prototype",
+      "title": "differential voltage measurement prototype",
+      "description": "first prototype of differential measurement using resistors. ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3294.JPEG",
+      "tags": [
+        "differential voltage measurement",
+        "prototype",
+        "BMS"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "differential-voltage-measurement-prototype-2": {
+      "id": "differential-voltage-measurement-prototype-2",
+      "title": "differential voltage measurement prototype 2",
+      "description": "-",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3678.JPG",
+      "tags": [
+        "differential voltage measurement",
+        "prototype",
+        "BMS"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "differential-voltage-measurement-prototype-test": {
+      "id": "differential-voltage-measurement-prototype-test",
+      "title": "differential voltage measurement prototype test",
+      "description": "testing the setup using esp32 via i2c",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_3209.JPEG",
+      "tags": [
+        "prototype",
+        "BMS",
+        "differential voltage measurement",
+        "i2c"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-prototype-v4-front": {
+      "id": "edex-bms-prototype-v4-front",
+      "title": "EDEX bms prototype v4 front",
+      "description": "4th iteration of the EDEXBMS battery management system front",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316392_y.jpg",
+      "tags": [
+        "EDEXBMS",
+        "bms",
+        "battery management system"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-assembly-verification": {
+      "id": "edex-bms-v4-assembly-verification",
+      "title": "EDEX bms v4 assembly verification",
+      "description": "checking for proper soldering of the stm32 pins.",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316397_y.jpg",
+      "tags": [
+        "STM32",
+        "PCB",
+        "BMS"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-programming-setup": {
+      "id": "edex-bms-v4-programming-setup",
+      "title": "EDEX bms v4 programming setup",
+      "description": "setting up the bms for programming using a stlink and usb to ttl converter uart for debugging",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316385_y.jpg",
+      "tags": [
+        "STM32",
+        "Stlink",
+        "programming",
+        "BMS"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-smd-assembly": {
+      "id": "edex-bms-v4-smd-assembly",
+      "title": "EDEX bms v4 SMD assembly ",
+      "description": "fully assembled edex bms with all smd components soldered",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316409_y.jpg",
+      "tags": [
+        "BMS",
+        "PCB",
+        "SMD",
+        "Soldering"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-stencil-and-pcb": {
+      "id": "edex-bms-v4-stencil-and-pcb",
+      "title": "EDEX bms v4 stencil and pcb ",
+      "description": "solder paste stencil and pcb directly from the manufacture right before I soldered everything.",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316382_y.jpg",
+      "tags": [
+        "BMS",
+        "PCB",
+        "soldering"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-components-pick-and-place-diagram": {
+      "id": "edex-bms-v4-components-pick-and-place-diagram",
+      "title": "EDEX bms v4 components pick and place diagram",
+      "description": "diagram for picking and placing components onto the pcb on my monitor for easy assembly",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316402_y.jpg",
+      "tags": [
+        "pick and place",
+        "soldering",
+        "pcb",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "stm32l-low-power-mcu-for-edex-bms-v4": {
+      "id": "stm32l-low-power-mcu-for-edex-bms-v4",
+      "title": "STM32L low power mcu for EDEX bms v4",
+      "description": "some stm32 low power mcu for the new edexbms v4 series. ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316403_y.jpg",
+      "tags": [
+        "stm32",
+        "stm32l"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-pcb": {
+      "id": "edex-bms-v4-pcb",
+      "title": "EDEX bms v4 pcb ",
+      "description": "custom designed v4 pcb for edexbms. ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214424.png",
+      "tags": [
+        "easyeda",
+        "pcb",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-upper-aluminium-pcb": {
+      "id": "edex-bms-v4-upper-aluminium-pcb",
+      "title": "EDEX bms v4 upper aluminium pcb ",
+      "description": "upper layer of pcb made from aluminium for cooling of the mosfets.",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214431.png",
+      "tags": [
+        "pcb",
+        "easyeda",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-power-stage-pcb-design": {
+      "id": "edex-bms-v3-power-stage-pcb-design",
+      "title": "EDEX bms v3 power stage pcb design",
+      "description": "edexbms v3 power stage pcb layer this houses the mosfets and power components of the bms ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1226.JPEG",
+      "tags": [
+        "bms",
+        "pcb",
+        "easyeda"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-logic-pcb-design": {
+      "id": "edex-bms-v3-logic-pcb-design",
+      "title": "EDEX bms v3 logic pcb design",
+      "description": "this is the logic pcb for edexbms this houses the mcu and balancing",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1225.JPEG",
+      "tags": [
+        "bms",
+        "pcb",
+        "easyeda"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-front": {
+      "id": "edex-bms-v3-front",
+      "title": "EDEX bms v3 front",
+      "description": "fully assembled edexbms v3 front ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316398_y.jpg",
+      "tags": [
+        "bms",
+        "edexbms",
+        "battery management system"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-side": {
+      "id": "edex-bms-v3-side",
+      "title": "EDEX bms v3 side",
+      "description": "edexbms assembled side note that the top layer is made from aluminium for cooling ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316391_y.jpg",
+      "tags": [
+        "bms",
+        "edexbms",
+        "battery management system"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v4-parts": {
+      "id": "edex-bms-v4-parts",
+      "title": "EDEX bms v4 parts",
+      "description": "edexbms v4 parts for assembly bought from lcsc ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316390_y.jpg",
+      "tags": [
+        "components",
+        "lcsc",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-thermal-pads-for-cooling-balancing-resistors": {
+      "id": "edex-bms-v3-thermal-pads-for-cooling-balancing-resistors",
+      "title": "EDEX bms v3 thermal pads for cooling balancing resistors",
+      "description": "thermal pads to transfer heat from the balancing resistors to the outer aluminium layer ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316400_y.jpg",
+      "tags": [
+        "cooling",
+        "bms",
+        "thermal pads"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-programming-setup": {
+      "id": "edex-bms-v3-programming-setup",
+      "title": "EDEX bms v3 programming setup ",
+      "description": "programming setup using stlink and also usb to ttl converter not shown in this photo",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/IMG_1331.JPEG",
+      "tags": [
+        "programming",
+        "stlink",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-assembled-power-stage-pcb": {
+      "id": "edex-bms-v3-assembled-power-stage-pcb",
+      "title": "EDEX bms v3 assembled power stage pcb",
+      "description": "powerstage pcb assembled fully",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316407_y.jpg",
+      "tags": [
+        "PCB",
+        "soldering",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-logic-board-assembly": {
+      "id": "edex-bms-v3-logic-board-assembly",
+      "title": "EDEX bms v3 logic board assembly",
+      "description": "partially assembled logic board for edexbms v3",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316410_y.jpg",
+      "tags": [
+        "soldering",
+        "pcb",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-power-stage-board-reflow-oven-cooking": {
+      "id": "edex-bms-v3-power-stage-board-reflow-oven-cooking",
+      "title": "EDEX bms v3 power stage board reflow oven cooking",
+      "description": "cooking the pcb in the reflow oven for optimal mosfet soldering onto the pcb. ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316394_y.jpg",
+      "tags": [
+        "bms",
+        "pcb",
+        "soldering",
+        "reflow",
+        "solder paste"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-power-stage-pcb-close-up": {
+      "id": "edex-bms-v3-power-stage-pcb-close-up",
+      "title": "EDEX bms v3 power stage pcb close up ",
+      "description": "close up of mosfets reflowed in the reflow oven ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316383_y.jpg",
+      "tags": [
+        "bms",
+        "soldering",
+        "mosfet",
+        "reflow oven"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-top-aluminium-pcb": {
+      "id": "edex-bms-v3-top-aluminium-pcb",
+      "title": "EDEX bms v3 top aluminium pcb ",
+      "description": "top aluminum pcb design in easyeda ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214147.png",
+      "tags": [
+        "pcb",
+        "easyeda",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-logic-pcb": {
+      "id": "edex-bms-v3-logic-pcb",
+      "title": "EDEX bms v3 logic pcb ",
+      "description": "logic pcb made in easyeda",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214208.png",
+      "tags": [
+        "bms",
+        "pcb",
+        "easyeda"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-power-stage-pcb": {
+      "id": "edex-bms-v3-power-stage-pcb",
+      "title": "EDEX bms v3 power stage pcb",
+      "description": "power stage pcb made in easyeda",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/Screenshot%202025-07-14%20214231.png",
+      "tags": [
+        "pcb",
+        "easyeda",
+        "bms"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-bodge-fix": {
+      "id": "edex-bms-v3-bodge-fix",
+      "title": "EDEX bms v3 bodge fix ",
+      "description": "power supply mosfet was of a too small package size so it was bodged in order for it to stop overheating. ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316389_y.jpg",
+      "tags": [
+        "bms",
+        "soldering",
+        "bodge"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-bodge-fix-closer-look": {
+      "id": "edex-bms-v3-bodge-fix-closer-look",
+      "title": "EDEX bms v3 bodge fix closer look ",
+      "description": "zoomed in ",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316401_y.jpg",
+      "tags": [
+        "bms",
+        "soldering",
+        "bodge"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    },
+    "edex-bms-v3-custom-protocol-sniffing": {
+      "id": "edex-bms-v3-custom-protocol-sniffing",
+      "title": "EDEX bms v3 custom protocol sniffing",
+      "description": "used a raspberry pi pico as a logic analyser to sniff my custom made protocol",
+      "url": "https://raw.githubusercontent.com/rasil1127/syedrasil/refs/heads/main/images/photo_6028142215647316384_y.jpg",
+      "tags": [
+        "logic analyser",
+        "protocol sniffing",
+        "bms",
+        "programming"
+      ],
+      "category": "BMS",
+      "projectId": "",
+      "uploadDate": "2025-07-15"
+    }
+  },
+  "categories": [
+    "BMS"
+  ],
+  "imageCategories": [
+    "BMS"
+  ],
+  "allTags": [
+    "EDEXBMS",
+    "battery management system",
+    "BMS",
+    "PCB"
+  ],
+  "allImageTags": [
+    "gdfgdf dfgfdg",
+    "dfgfdgdf",
+    "BMS",
+    "EDEXBMS",
+    "battery management system",
+    "passive balancer",
+    "balancing",
+    "differential voltage measurement",
+    "prototype",
+    "i2c",
+    "bms",
+    "STM32",
+    "PCB",
+    "Stlink",
+    "programming",
+    "SMD",
+    "Soldering",
+    "soldering",
+    "pick and place",
+    "pcb",
+    "stm32",
+    "stm32l",
+    "easyeda",
+    "edexbms",
+    "components",
+    "lcsc",
+    "cooling",
+    "thermal pads",
+    "stlink",
+    "reflow",
+    "solder paste",
+    "mosfet",
+    "reflow oven",
+    "bodge",
+    "logic analyser",
+    "protocol sniffing"
+  ],
+  "websiteSettings": {
+    "siteName": "Rasil's Projects",
+    "siteDescription": "Designing and building lithium-ion battery packs, PCBs, custom tools, and electronics projects. Documenting the journey from concept to creation.",
+    "authorName": "Rasil",
+    "footerText": "Built for showcasing hardware projects.",
+    "logoText": "RP",
+    "copyrightYear": "2024",
+    "metaKeywords": "electronics, battery, PCB, engineering, projects",
+    "colors": {
+      "primary": "#0070f0",
+      "accent": "#00ccc5",
+      "background": "#0d1117",
+      "cardBackground": "#161b22"
+    }
+  },
+  "generated": "2025-07-15T13:15:24.943Z",
+  "version": "1.0"
+}
